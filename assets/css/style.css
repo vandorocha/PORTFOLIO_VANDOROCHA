@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", serif;
+}
+
+:root {
+    --cor-primaria: #3498db;
+    --cor-secundaria: #5a924e;
+    --cor-neutra: #ecf0f1;
+    --cor-alerta: #e74c3c;
+  }
+
+h1{
+    color: var(--cor-secundaria);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/*Banner */
+.banner{
+    display: flex;
+    color: #ffffff;
+    width: 100%;
+    height: 50%;
+    border-bottom: solid 2px rgb(97, 97, 97);
+    background-color: #0d1411e7;
+}
+
+.banner div{
+    width: 50%;
+    height: 100%;
+}
+
+.banner_1{
+    margin-left: 4em;
+    margin-top: 3em;
+}
+
+.banner_1 p{
+    font-size: 1.6rem;
+}
+
+.banner_1 h2{
+    font-size: 3rem;
+}
+
+
+
+.banner_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3em;
+}
+
+.banner h2{
+    color: var(--cor-secundaria);
+}
+
+.circulo-image{
+    display: flex;
+    width: 100%;          /* O div terá sempre 100% da largura do contêiner */
+    aspect-ratio: 1 / 1;  /* Define que a altura será igual à largura (1:1) */
+    background-color: #3b3b3b83; /* Apenas para visualização */
+    padding: 1.3em;
+    border-radius: 50%;
+}
+
+#image_perfil img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
