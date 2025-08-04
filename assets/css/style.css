@@ -8,105 +8,59 @@
 }
 
 :root {
-    --cor-primaria: #3498db;
-    --cor-secundaria: #5a924e;
-    --cor-neutra: #ecf0f1;
-    --cor-alerta: #e74c3c;
+    --cor-primaria: #4f46e5;
+    --cor-secundaria: #7c3aed;
+    --cor-escuro: #0f172a;
+    --cor-maisEscuro: #0a0f1c;
+    --cor-claro: #e2e8f0;
+    --cor-vidro: rgba(255, 255, 255, 0.1);
   }
 
-h1{
-    color: var(--cor-secundaria);
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
+body {
+    background-color: var(--cor-escuro);
+    color: var(--cor-claro);
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-}
-
-
-/*Banner */
-.banner{
-    display: flex;
-    color: #ffffff;
+/*Menu navegação*/
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.8);
     width: 100%;
-    height: 50%;
-    border-bottom: solid 2px rgb(97, 97, 97);
-    background-color: #0d1411e7;
+    z-index: 100;
+    padding: 1.5rem;
 }
 
-.banner div{
-    width: 50%;
-    height: 100%;
-}
-
-.banner_1{
+.menu {
     display: flex;
-    flex-direction: column;
-    margin-left: 4em;
-    margin-top: 3em;
-}
-
-.banner_1 p{
-    font-size: 1.6rem;
-}
-
-.banner_1 h2{
-    font-size: 3rem;
-}
-
-.banner_2{
-    display: flex;
+    list-style: none;
+    gap: 3rem;
     justify-content: center;
-    align-items: center;
-    padding: 1.3em;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--cor-claro);
+    font-weight: 500;
     position: relative;
+    padding: 0.5rem 0;
 }
 
-.banner h2{
-    color: var(--cor-secundaria);
-}
-
-#image_perfil img{
-    width: 100%;
-    border-radius: 50%;
-}
-
-
-.circulo-image{
-    display: flex;
-    width: 100%;          /* O div terá sempre 100% da largura do contêiner */
-    aspect-ratio: 1 / 1;  /* Define que a altura será igual à largura (1:1) */
-    background-color: #3b3b3b83; /* Apenas para visualização */
-    padding: 1.3em;
-    border-radius: 50%;
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
     position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+    transition: width 0.5s ease;
 }
 
-.banner_1 .botoes_banner{
-    height: 20%;
-    margin-top: 2.9em;
+.menu-link:hover::after {
+    width: 100%;
 }
-
-.banner_1 .botoes_banner button{
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding: 0.4em 2em;
-    background: var(--cor-secundaria);
-    border-radius: 8px;
-}
-
-
-
-
-

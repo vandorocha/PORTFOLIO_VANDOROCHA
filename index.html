@@ -9,21 +9,21 @@
 <body>
     <header>
         <nav class="navegacao">
-            <ul>
+            <ul class="menu">
                 <li>
-                    <a href="#inicio">Início</a>
+                    <a href="#inicio" class="menu-link">Início</a>
                 </li>
                 <li>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre" class="menu-link">Sobre</a>
                 </li>
                 <li>
-                    <a href="#projetos">Projetos</a>
+                    <a href="#projetos" class="menu-link">Projetos</a>
                 </li>
                 <li>
-                    <a href="#credenciais">Credenciais</a>
+                    <a href="#credenciais" class="menu-link">Credenciais</a>
                 </li>
                 <li>
-                    <a href="#contato">Contato</a>
+                    <a href="#contatos" class="menu-link">Contatos</a>
                 </li>
             </ul>
         </nav>
@@ -33,19 +33,51 @@
             <div>
                 <img src="./assets/img/perfil.jpg" alt="Vando Rocha" class="foto-perfil">
                 <h1>Vando Rocha</h1>
-                <p>Olá! Sou um profissional apaixonado por dados, sistemas e soluções que geram valor real para o negócio. Com formação sólida em Análise de Sistemas e especialização em Banco de Dados, atuo na integração e automação de processos, construção de pipelines de dados, modelagem, desenvolvimento SQL avançado e visualizações inteligentes em Power BI. Já liderei projetos de modernização de infraestrutura, implantação de banco de dados, ETL com APIs, e entregas regulatórias no setor de seguros. Meu objetivo é transformar desafios técnicos em resultados estratégicos — sempre com eficiência, qualidade e visão analítica.</p>
+                <p>Desenvolvedor Sql</p>
             </div>
         </section>
         <section id="sobre">
-            <div>
-                <p>
-                    Olá! 
+            <h2 class="sobre-titulo">Sobre Mim</h2>
+            <div class="sobre-caixa">
+                <p class="sobre-caixa">
+                    Olá! Sou um profissional apaixonado por dados, sistemas e soluções que geram valor real para o negócio. Com formação sólida em Análise de Sistemas e especialização em Banco de Dados, atuo na integração e automação de processos, construção de pipelines de dados, modelagem, desenvolvimento SQL avançado e visualizações inteligentes em Power BI. Já liderei projetos de modernização de infraestrutura, implantação de banco de dados, ETL com APIs, e entregas regulatórias no setor de seguros. Meu objetivo é transformar desafios técnicos em resultados estratégicos — sempre com eficiência, qualidade e visão analítica. 
                 </p>
             </div>
         </section>
+        <section id="projetos" class="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-caixa">
+                <div class="projetos-card">
+                    <img src="./assets/img/projeto-1.png" alt="Projeto 1" class="projetos-imagem">
+                    <h3 class="info-projetos">Projeto 1</h3>
+                    <p class="paragro-projetos">Este é o projeto 1 - Apenas um projeto fictício por enquanto!</p>
+                </div>
+                <div class="projetos-card">
+                    <img src="./assets/img/projeto-2.png" alt="Projeto 1" class="projetos-imagem">
+                    <h3 class="info-projetos">Projeto 2</h3>
+                    <p class="paragro-projetos">Este é o projeto 2 - Apenas um projeto fictício por enquanto!</p>
+                </div>
+                <div class="projetos-card">
+                    <img src="./assets/img/projeto-3.png" alt="Projeto 1" class="projetos-imagem">
+                    <h3 class="info-projetos">Projeto 3</h3>
+                    <p class="paragro-projetos">Este é o projeto 3 - Apenas um projeto fictício por enquanto!</p>
+                </div>
+            </div>
+        </section>
+        <section id="contatos" class="contatos">
+            <h2 class="contatos-titulo">Contatos</h2>
+            <form class="form-contato" id="formulario" action="">
+                <div class="grupo-form">            
+                    <input placeholder="Nome" class="campo-form" type="text">
+                </div>
+                <div class="grupo-form">            
+                    <textarea placeholder="Digite sua Mensagem" class="text-form" name="" id=""></textarea>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
