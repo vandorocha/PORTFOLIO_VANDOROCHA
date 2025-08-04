@@ -7,6 +7,7 @@
     <title>Vando Rocha | Desenvolvedor de Banco de Dados e BI</title>
 </head>
 <body>
+    <div class="particulas"></div>
     <header>
         <nav class="navegacao">
             <ul class="menu">
@@ -50,39 +51,47 @@
             </div>
         </section>
         <section id="projetos" class="projetos">
-            <h2>Meus Projetos</h2>
+            <h2 class="projetos-titulo">Meus Projetos</h2>
             <div class="projetos-caixa">
                 <div class="projetos-card">
                     <img src="./assets/img/projeto-1.png" alt="Projeto 1" class="projetos-imagem">
-                    <h3 class="info-projetos">Projeto 1</h3>
-                    <p class="paragro-projetos">Este é o projeto 1 - Apenas um projeto fictício por enquanto!</p>
+                    <div class="projetos-texto">
+                        <h3 class="projetos-info">Projeto 1</h3>
+                        <p class="projetos-paragrafo">Este é o projeto 1 - Apenas um projeto fictício por enquanto!</p>
+                    </div>
                 </div>
                 <div class="projetos-card">
                     <img src="./assets/img/projeto-2.png" alt="Projeto 1" class="projetos-imagem">
-                    <h3 class="info-projetos">Projeto 2</h3>
-                    <p class="paragro-projetos">Este é o projeto 2 - Apenas um projeto fictício por enquanto!</p>
+                    <div class="projetos-texto">
+                        <h3 class="projetos-info">Projeto 2</h3>
+                        <p class="projetos-paragrafo">Este é o projeto 2 - Apenas um projeto fictício por enquanto!</p>
+                    </div>
                 </div>
                 <div class="projetos-card">
                     <img src="./assets/img/projeto-3.png" alt="Projeto 1" class="projetos-imagem">
-                    <h3 class="info-projetos">Projeto 3</h3>
-                    <p class="paragro-projetos">Este é o projeto 3 - Apenas um projeto fictício por enquanto!</p>
+                    <div class="projetos-texto">
+                        <h3 class="projetos-info">Projeto 3</h3>
+                        <p class="projetos-paragrafo">Este é o projeto 3 - Apenas um projeto fictício por enquanto!</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="contatos" class="contatos">
             <h2 class="contatos-titulo">Contatos</h2>
-            <form class="form-contato" id="formulario" action="">
+            <form class="form-contato" id="formulario" onsubmit="enviarWhats(event)">
                 <div class="grupo-form">            
-                    <input placeholder="Nome" class="campo-form" type="text">
+                    <input placeholder="Digite seu nome" class="campo-form" type="text" id="nome">
                 </div>
                 <div class="grupo-form">            
-                    <textarea placeholder="Digite sua Mensagem" class="text-form" name="" id=""></textarea>
+                    <textarea placeholder="Digite sua mensagem e uma forma de contato." class="campo-form" name="" id="mensagem" rows="4"></textarea>
                 </div>
+                <button type="submit" class="botao-form">Enviar WhatsApp</button>
             </form>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./assets/js/contato.js"></script>
 </body>
 </html>
