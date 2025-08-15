@@ -8,8 +8,8 @@
 }
 
 :root {
-    --cor-primaria: #8ff509;
-    --cor-secundaria: #d9f057;
+    --cor-primaria: #3df510;
+    --cor-secundaria: #a3f04b;
     --cor-escuro: #0f172a;
     --cor-maisEscuro: #0a0f1c;
     --cor-claro: #f8fafc;
@@ -153,7 +153,7 @@ h1::after {
 }
 
 .btn {
-  padding: 0.70rem 2.1rem;
+  padding: 0.50rem 1.8rem;
   font-size: 1.1rem;
   font-weight: 700;
   border: none;
@@ -250,15 +250,15 @@ h1::after {
 
 .projetos-titulo {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: 2rem;
+    margin-bottom: 30px;
     color: var(--cor-primaria);
 }
 
 .projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    gap: 2.2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -280,15 +280,16 @@ h1::after {
 
 .projetos-paragrafo {
     color: rgba(248, 250, 252, 0.85);
-    line-height: 1.25rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .projetos-texto {
-    padding: 1.1rem;
+    padding: 1rem;
 }
 
 .projetos-info {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Contatos */
@@ -332,7 +333,7 @@ h1::after {
 }
 
 .botao-form {
-    color: var(--cor-claro);
+    color: var(--cor-escuro);
     background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
     padding: 1rem 2rem;
     border: none;
@@ -341,6 +342,7 @@ h1::after {
     font-weight: bold;
     width: 100%;
     transition: all 0.5s ease;
+    font-size: 1rem;
 }
 
 .botao-form:hover {
@@ -361,6 +363,23 @@ h1::after {
         radial-gradient(circle at 10% 20%, var(--cor-primaria) 0%, transparent 20%), 
         radial-gradient(circle at 90% 80%, var(--cor-secundaria) 0%, transparent 20%),
         var(--cor-maisEscuro);
+}
+
+
+.btn-proj {
+    text-decoration: none;
+    padding: 0.40rem 1.6rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 
+        background-color 0.4s ease,
+        box-shadow 0.4s ease,
+        transform 0.3s ease;
+    color: var(--cor-claro);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    outline-offset: 2px;
 }
 
 /* Animação da imagem */
@@ -386,3 +405,4 @@ h1::after {
     transform: scaleX(1);
   }
 }
+
